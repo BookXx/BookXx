@@ -6,9 +6,9 @@ app = Flask(__name__)
 def main():
 	return render_template("main.html")
 
-@app.route('/team')
-def bio():
-	return render_template('team.html')
+@app.route('/buy')
+def buy():
+	return render_template('buy.html')
 
 @app.route('/pitch')
 def pitch():
