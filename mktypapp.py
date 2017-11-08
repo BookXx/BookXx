@@ -10,6 +10,10 @@ def main():
 def buy():
 	return render_template('buy.html')
 
+@app.route('/sell')
+def sell():
+	return render_template('sell.html')
+
 @app.route('/pitch')
 def pitch():
 	return render_template('pitch.html')
@@ -17,6 +21,7 @@ def pitch():
 @app.route('/formdemo')
 def formdemo():
 	return render_template('formdemo.html')
+
 
 
 if __name__ == '__main__':
