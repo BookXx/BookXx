@@ -18,10 +18,6 @@ def sell():
 def pitch():
 	return render_template('pitch.html')
 
-@app.route('/formdemo')
-def formdemo():
-	return render_template('about.html')
-
 @app.route('/rent')
 def rent():
 	return render_template('rent.html')
