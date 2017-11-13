@@ -20,7 +20,8 @@ def pitch():
 
 @app.route('/formdemo')
 def formdemo():
-	return render_template('formdemo.html')
+	return render_template('rent.html')
+
 
 
 
