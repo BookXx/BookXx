@@ -22,11 +22,6 @@ def pitch():
 def formdemo():
 	return render_template('formdemo.html')
 
-@app.route('/rent')
-def rent():
-	return render_template('rent.html')
-
-
 
 
 if __name__ == '__main__':
