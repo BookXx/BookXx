@@ -34,9 +34,9 @@ def bio():
 def staci():
 	return render_template('staci.html')
 
-@app.route('/staci')
-def staci():
-	return render_template('staci.html')
+@app.route('/brianna')
+def brianna():
+	return render_template('brianna.html')
 
 
 if __name__ == '__main__':
