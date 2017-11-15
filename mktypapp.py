@@ -22,6 +22,13 @@ def pitch():
 def rent():
 	return render_template('rent.html')
 
+@app.route('/about')
+def about():
+	return render_template('about.html')
+
+@app.route('/bio')
+def bio():
+	return render_template('bio.html')
 
 
 
