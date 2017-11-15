@@ -38,6 +38,11 @@ def staci():
 def brianna():
 	return render_template('brianna.html')
 
+@app.route('/Lijep7')
+def Lijep7():
+	return render_template('Lijep7.html')
+
+
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=3000)
