@@ -34,6 +34,10 @@ def bio():
 def staci():
 	return render_template('staci.html')
 
+@app.route('/brianna')
+def brianna():
+	return render_template('brianna.html')
+
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=3000)
