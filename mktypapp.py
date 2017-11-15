@@ -42,6 +42,10 @@ def brianna():
 def Lijep7():
 	return render_template('Lijep7.html')
 
+@app.route('/Ryan')
+def ryan():
+	return render_template('ryan.html')
+
 
 
 if __name__ == '__main__':
