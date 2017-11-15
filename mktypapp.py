@@ -30,6 +30,9 @@ def about():
 def bio():
 	return render_template('bio.html')
 
+@app.route('/staci')
+def staci():
+	return render_template('staci.html')
 
 @app.route('/staci')
 def staci():
