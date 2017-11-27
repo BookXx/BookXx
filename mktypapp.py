@@ -18,21 +18,19 @@ def sell():
 def pitch():
 	return render_template('pitch.html')
 
-<<<<<<< HEAD
+
 @app.route('/formdemo')
 def formdemo():
 	return render_template('formdemo.html')
 
-=======
->>>>>>> 48fde34776159f8ea616c979a5ba34470a354e56
+
 @app.route('/rent')
 def rent():
 	return render_template('rent.html')
 
-<<<<<<< HEAD
 
 
-=======
+
 @app.route('/about')
 def about():
 	return render_template('about.html')
@@ -69,7 +67,6 @@ def chat():
 		return render_template("chat.html",messages=messages)
 	else:
 		return render_template("chat.html",messages=[])
->>>>>>> 48fde34776159f8ea616c979a5ba34470a354e56
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=3000)

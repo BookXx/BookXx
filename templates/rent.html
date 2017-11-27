@@ -2,33 +2,30 @@
 {% block content %}
 
 <div class="jumbotron">
-  <h1> Renting </h1>
+  <h1> Book Rentals </h1>
   <p class="text-warning">
-<<<<<<< HEAD
-=======
-    This is our inventory
+
   </p>
 </div>
-=======
-  <h1>Books To Buy</h1>
-  <p class="text-warning">
-    This is our inventory
-  </p>
 
+<form method="GET" action="processBook">
 
-  Your name : <input type="text" width="40"> <br>
-  Your age :<input type="text" width="40"<br>
->>>>>>> 48fde34776159f8ea616c979a5ba34470a354e56
+  Your name : <input type="text" width="30"> <br>
+  Your age :<input type="text" width="20"<br>
+
 
   <div class="text">
+    <h1> Inventory </h1>
     <h1> Book Conditions </h1>
+    <h1> Prices </h1>
+    <h1> Catagories </h1>
   </div>
   <div >
 
   <ul>
-    <li> good $34.99 </li>
-    <li> excelent $59 </li>
-    <li> nice $24 </li>
+    <li> Math Calculus - good $34.99 </li>
+    <li> American History - excelent $59 </li>
+    <li> Biology - nice $24 </li>
   </ul>
 
   <button class="btn btn-lg btn-primary">
@@ -36,15 +33,12 @@
   </button>
 
   <hr>
-  Your name: <input type="text" width="40" name="age"> <br>
+  Book Title <input type="text" width="40" name="title"> <br>
 
+  Book Conditions <input type="text" width="40" name= "good, new, used " <br>
 
-  Your age :<input type="text" width="40"<br>
-<<<<<<< HEAD
-
-=======
   <textarea name=""></textarea>
->>>>>>> 48fde34776159f8ea616c979a5ba34470a354e56
+
 
   <br>
   Book waittime:
@@ -57,8 +51,10 @@
   <br>
   <input type="submit">
 
+</form>
 
-  </div>
+
+
 
 
 
