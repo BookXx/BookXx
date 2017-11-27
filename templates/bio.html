@@ -1,12 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="bg-primary">Tim's short bio!!</h1>
-<p> I was born in Lincoln, Nebraska and grew up in New Mexico</p>
-<p>Here is what I looked like in 1975 when I was in college at Brandeis</p>
-<img src = "http://www.cs.brandeis.edu/~tim/alumnicollege07/tim1977.jpg" width="200">
-<p>Here is a link to
-<a href="http://www.cs.brandeis.edu/~tim">my homepage</a>
-</p>
+<div class="jumbotron">
+  <h1>Staci,Ryan,Briana and Lijep!!</h1>
+  <p class="text-warning">
+    Meet our wonderful team!!
+
+  </p>
+</div>
+<div class="text-center">
+  Add pictures and mini bios of everyone in your team to this page.
+
+</div>
+<form action="http://0.0.0.0:3000/staci">
+    <input type="submit" value="Go to Staci's page" />
+</form>
+<form action="http://0.0.0.0:3000/brianna">
+    <input type="submit" value="Go to Brianna's page" />
+</form>
+<form action="http://0.0.0.0:3000/Ryan">
+    <input type="submit" value="Go to Ryan's page" />
+</form>
+<form action="http://0.0.0.0:3000/Lijep7">
+    <input type="submit" value="Go to Lijep7's page" />
+</form>
+
 
 {% endblock %}
