@@ -55,6 +55,8 @@ def Lijep7():
 def ryan():
 	return render_template('ryan.html')
 
+
+
 messages=[]
 @app.route('/chat',methods=['GET','POST'])
 def chat():
