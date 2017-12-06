@@ -57,6 +57,8 @@ def ryan():
 
 
 
+
+
 messages=[]
 @app.route('/chat',methods=['GET','POST'])
 def chat():
