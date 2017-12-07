@@ -147,7 +147,7 @@ def processSell():
 		bookCounter = bookCounter + 1
 		books.insert(0,book) # add msg to the front of the list
 
-	return render_template("BooksForSale.html",books=books)
+	return render_template("booksForSale.html",books=books)
 
 
 
