@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Books For Sale</h1>
+  <p class="text-warning">
+    This is our inventory
+  </p>
+</div>
+
+
+    {% for book in books %}
+		<form method="POST" action="removeBook">
+      <div class="bg-info">
+        {{book.title}}// <a href="{{book.link}}">(Amazon)</a> for ${{book.price}}<br>
+        for sale by {{book.who}}<br>
+        for use in {{book.course}}<br>
+				<i>
+        {{book.description}}
+			  </i>
+				<br>
+				<input type="hidden" name="who" value="{{book.who}}">
+				<input type="hidden" name="id" value="{{book.id}}">
+				<input type="submit" value="I've sold this" class="btn btn-sm btn-primary">
+      </div>
+		</form>
+		<hr>
+    {% endfor %}
+
+
+
+
+
+
+
+{% endblock %}
