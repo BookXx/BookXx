@@ -26,6 +26,10 @@ app = Flask(__name__)
 app.config['GOOGLE_ID'] = '246096591118-ti33uv184e4m1bib9grgn8alm45btadb.apps.googleusercontent.com'
 app.config['GOOGLE_SECRET'] = 'iqgLqu6pXgLuHsZFq6nvxDX3'
 
+#gracehopper.cs-i.brandeis.edu:5200
+#app.config['GOOGLE_ID'] = '246096591118-ti33uv184e4m1bib9grgn8alm45btadb.apps.googleusercontent.com'
+#app.config['GOOGLE_SECRET'] = 'iqgLqu6pXgLuHsZFq6nvxDX3'
+
 app.debug = True
 app.secret_key = 'development'
 oauth = OAuth(app)
@@ -235,4 +239,5 @@ def chat():
 		return render_template("chat.html",messages=[])
 
 if __name__ == '__main__':
-    app.run('0.0.0.0',port=5000)
+    app.run('0.0.0.0',port=5000)  #use 5000 for development on localhost 127.0.0.1
+	#app.run('0.0.0.0',port=5200)  # use 5200 for production gracehopper
