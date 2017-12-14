@@ -1,7 +1,13 @@
 """
-    Brandeis Eats
+    BookXx
 	Developers:
 
+	To run this you need to execute the following shell commands
+	% pip3 install flask
+	% pip3 install flash_oauthlib
+	% python3 mktypapp.py
+
+	For windows just don't type the "3"s
 
     The authentication comes from an app by Bruno Rocha
     GitHub: https://github.com/rochacbruno
@@ -12,9 +18,17 @@ from flask_oauthlib.client import OAuth
 from datetime import datetime
 
 app = Flask(__name__)
+#gracehopper.cs-i.brandeis.edu:5000
+#app.config['GOOGLE_ID'] = '783502545148-f4a0ss6kdf839iekmreq1inl2lqnhaqt.apps.googleusercontent.com'
+#app.config['GOOGLE_SECRET'] = '9WksdPKQfOG77hO3DDteRFYr'
+
+#127.0.0.1:5000
 app.config['GOOGLE_ID'] = '246096591118-ti33uv184e4m1bib9grgn8alm45btadb.apps.googleusercontent.com'
 app.config['GOOGLE_SECRET'] = 'iqgLqu6pXgLuHsZFq6nvxDX3'
 
+#gracehopper.cs-i.brandeis.edu:5200
+#app.config['GOOGLE_ID'] = '246096591118-ti33uv184e4m1bib9grgn8alm45btadb.apps.googleusercontent.com'
+#app.config['GOOGLE_SECRET'] = 'iqgLqu6pXgLuHsZFq6nvxDX3'
 
 app.debug = True
 app.secret_key = 'development'
@@ -137,7 +151,7 @@ def processSell():
 		bookCounter = bookCounter + 1
 		books.insert(0,book) # add msg to the front of the list
 
-	return render_template("BooksForSale.html",books=books)
+	return render_template("booksForSale.html",books=books)
 
 
 
@@ -225,4 +239,5 @@ def chat():
 		return render_template("chat.html",messages=[])
 
 if __name__ == '__main__':
-    app.run('0.0.0.0',port=5000)
+    app.run('0.0.0.0',port=5000)  #use 5000 for development on localhost 127.0.0.1
+	#app.run('0.0.0.0',port=5200)  # use 5200 for production gracehopper
