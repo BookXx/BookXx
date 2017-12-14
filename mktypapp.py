@@ -189,12 +189,6 @@ def formdemo():
 	return render_template('formdemo.html')
 
 
-@app.route('/rent')
-@require_login
-def rent():
-	return render_template('rent.html')
-
-
 
 
 @app.route('/about')
